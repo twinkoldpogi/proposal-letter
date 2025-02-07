@@ -10,7 +10,7 @@ interface EnvelopeProps {
 
 const Envelope: React.FC<EnvelopeProps> = () => {
   const [isFlapped, setIsFlapped] = useState(false);
-  const [audio] = useState(new Audio("src/photo/music.mp3"));
+  const [audio] = useState(new Audio("/photo/music.mp3"));
   const [noButtonPosition, setNoButtonPosition] = useState({ x: 0, y: 0 });
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(-1); // Start with -1 to add initial delay
   const [showProposal, setShowProposal] = useState(false);
@@ -81,10 +81,10 @@ const Envelope: React.FC<EnvelopeProps> = () => {
   const [showHeart, setShowHeart] = useState(false);
 
   const items = [
-    { type: "photo", id: 1, src: "src/photo/1.jpg" },
-    { type: "photo", id: 2, src: "src/photo/2.jpg" },
-    { type: "photo", id: 3, src: "src/photo/3.jpg" },
-    { type: "photo", id: 4, src: "src/photo/4.jpg" },
+    { type: "photo", id: 1, src: "/photo/1.jpg" },
+    { type: "photo", id: 2, src: "/photo/2.jpg" },
+    { type: "photo", id: 3, src: "/photo/3.jpg" },
+    { type: "photo", id: 4, src: "/photo/4.jpg" },
     { type: "letter" },
   ];
 
