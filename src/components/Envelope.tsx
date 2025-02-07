@@ -76,6 +76,10 @@ const Envelope: React.FC<EnvelopeProps> = () => {
     setTimeout(() => {
       setShowHeart(true);
     }, 2000);
+    
+    setTimeout(() => {
+      setIsFlapped(false);
+    }, 3000);
   };
 
   const [showHeart, setShowHeart] = useState(false);
@@ -97,7 +101,7 @@ const Envelope: React.FC<EnvelopeProps> = () => {
         }`}
         onClick={!isFlapped ? handleEnvelopeClick : undefined}
         style={{ transformOrigin: "center", scale: 1 }}
-        animate={isFlapped ? { y: 150 } : { y: 0 }}
+        animate={isFlapped ? { y: 150, opacity: showHeart ? 0 : 1 } : { y: 0 }}
         transition={{ duration: 0.8 }}
       >
         <div className="envelope relative w-[300px] h-[230px]">
