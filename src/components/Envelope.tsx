@@ -96,8 +96,8 @@ const Envelope: React.FC<EnvelopeProps> = () => {
           isFlapped ? "flap" : ""
         }`}
         onClick={!isFlapped ? handleEnvelopeClick : undefined}
-        style={{ transformOrigin: "center", scale: 2 }}
-        animate={isFlapped ? { y: 450 } : { y: 0 }}
+        style={{ transformOrigin: "center", scale: 1 }}
+        animate={isFlapped ? { y: 150 } : { y: 0 }}
         transition={{ duration: 0.8 }}
       >
         <div className="envelope relative w-[300px] h-[230px]">
