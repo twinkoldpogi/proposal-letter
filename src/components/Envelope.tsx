@@ -208,7 +208,7 @@ const Envelope: React.FC<EnvelopeProps> = () => {
                         }}
                       >
                         <video
-                          src="src/photo/vid1.mp4"
+                          src="/photo/vid1.mp4"
                           autoPlay
                           muted
                           loop
@@ -240,7 +240,7 @@ const Envelope: React.FC<EnvelopeProps> = () => {
                         }}
                       >
                         <video
-                          src="src/photo/vid2.MP4"
+                          src="/photo/vid2.MP4"
                           autoPlay
                           muted
                           loop
